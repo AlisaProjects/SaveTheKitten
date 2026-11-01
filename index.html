@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <title>Врятуй кошеня</title>
+    <script src="game.js" defer></script>
+</head>
+
+<body>
+    <h1>Врятуй кошеня</h1>
+    <section id="start-screen">
+        <p>Вітаємо у грі!</p>
+        <button id="start-button">Почати гру</button>
+    </section>
+    <section id="game-container" hidden>
+        <p id="levels">Виберіть поверх, на якому сидить кошеня: <span id="levels-value"></span></p>
+        <p id="msg"></p>
+        <form id="guess-form">
+            <input type="number" id="level-input" required>
+            <button id="check-button">Перевірити</button>
+        </form>
+        <p id="tries"></p>
+        <ul id="history"></ul>
+        <button id="restart">Грати знову</button>
+    </section>
+</body>
+
+</html>
