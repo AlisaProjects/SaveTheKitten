@@ -53,6 +53,7 @@ Game.render = function () {
 
     $('msg').textContent = s.message;
     $('msg').className = s.status;
+    $('level-input').value = '';
     $('level-input').max = s.levels;
     $('level-input').min = 1;
     $('level-input').disabled = s.status !== 'playing';
