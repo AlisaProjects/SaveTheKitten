@@ -1,8 +1,9 @@
 const $ = id => document.getElementById(id);
 
-Game = Window.Game || {
+window.Game = window.Game || {
     state: null
 };
+
 Game.init = function () {
     // Initialize game variables and state
     const levels = Math.floor(Math.random() * 100) + 1; // Random number of levels between 1 and 5
