@@ -54,6 +54,7 @@ Game.render = function () {
     $('msg').textContent = s.message;
     $('msg').className = s.status;
     $('level-input').max = s.levels;
+    $('level-input').min = 1;
     $('level-input').disabled = s.status !== 'playing';
     $('check-button').disabled = s.status !== 'playing';
     $('tries').textContent = `Спроби: ${s.guesses.length}/${s.tries}`;
